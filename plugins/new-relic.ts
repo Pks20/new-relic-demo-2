@@ -26,15 +26,13 @@ export default defineNuxtPlugin(() => {
   
   // Add custom error handler for Nuxt route errors
 
-    const router = useRouter();
-    router.onError((error) => {
-      if (error.message.includes('404')) {
-        agent.api.noticeError(error);
+  const router = useRouter();
+        agent.api.noticeError("SHUBHAM");
         agent.api.addPageAction('Route404', {
           route: router.currentRoute.value.path,
           referrer: document.referrer
         });
-      }
-    });
+
+   
 
 });
