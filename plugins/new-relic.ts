@@ -61,9 +61,13 @@ export default defineNuxtPlugin(() => {
   // Add custom error handler for Nuxt route errors
 
   const router = useRouter();
-  agent.api.noticeError("SHUBHAM");
   agent.api.addPageAction("Route404", {
     route: router.currentRoute.value.path,
     referrer: document.referrer,
   });
+  return {
+    provide: {
+      newRelic: agent
+    }
+  }
 });
