@@ -31,15 +31,15 @@ export default defineNuxtPlugin(() => {
       privacy: { cookies_enabled: true }, // Required for PageView events
     },
     info: {
-      applicationID: "1134593720",
-      licenseKey: "NRJS-c4f4bebb40069625bc8",
-      accountID: "6813646",
+      applicationID: "1589111245",
+      licenseKey: "NRJS-930404c863c92d4fe1c",
+      accountID: "6897384",
     },
     loader_config: {
-      accountID: "6813646",
-      applicationID: "1134593720",
-      licenseKey: "NRJS-c4f4bebb40069625bc8",
-      trustKey: "6813646",
+      accountID: "6897384",
+      applicationID: "1589111245",
+      licenseKey: "NRJS-930404c863c92d4fe1c",
+      trustKey: "6897384",
     },
   };
 
